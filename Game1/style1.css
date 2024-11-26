@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #e2e6ea;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    min-width: 100px;
+}
