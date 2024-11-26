@@ -9,11 +9,17 @@
     background: url("/web-projekti/Game3/game3img/NAPPI1.png") no-repeat center center;
     background-size: 300px;
     text-align: center;
+    transition: all 300ms
     
 
 }
 
 .nav-link {
    color: rgb(0, 0, 0);
+   
+    
+}
+.nav-item:hover {
+    transform: scale(1.2)
     
 }
