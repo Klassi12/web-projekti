@@ -1,0 +1,20 @@
+.navbar-nav {
+  margin: auto;
+
+}
+
+.nav-item {
+    padding: 70px;
+    margin: 30px;
+    background: url("/web-projekti/Game3/game3img/NAPPI1.png") no-repeat center center;
+    background-size: 300px;
+    text-align: center;
+    
+    
+    
+}
+
+.nav-link {
+   color: rgb(0, 0, 0);
+    
+}
