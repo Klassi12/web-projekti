@@ -7,9 +7,9 @@ body {
     font-family: Arial, sans-serif; 
     background-color: #0084ff; 
     flex-direction: column;
-    background: url('/Game3/game3img/pilvi.png') no-repeat center center fixed,
+    background: url('/IMG/pilvi.png') no-repeat center center fixed, url("/IMG/tausta1.jpg") no-repeat center center fixed,
     #008cff;
-    background-size: 70%;
+    background-size: 70%, cover;
 }
 
 nav {
