@@ -91,4 +91,14 @@ function checkAnswer() {
 checkButton.addEventListener('click', checkAnswer);
 
 generateQuestion();
+
+function startGame() {
+    startGameButton.style.display = 'none';
+    gameContainer.style.display = 'block';
+    generateQuestion();
+}
+
+startGameButton.addEventListener('click', startGame);
+    checkButton.addEventListener('click', checkAnswer);
+    
 });

@@ -7,9 +7,9 @@ body {
     font-family: Arial, sans-serif; 
     background-color: #0084ff; 
     flex-direction: column;
-    background: url('/Game3/game3img/pilvi.png') no-repeat center center fixed,
+    background: url('/IMG/pilvi.png') no-repeat center center fixed, url("/IMG/tausta1.jpg") no-repeat center center fixed,
     #008cff;
-    background-size: 70%;
+    background-size: 80%, cover;
 }
 
 nav {
@@ -26,7 +26,8 @@ nav {
   .nav-item {
       padding: 70px;
       margin: 30px;
-      background: url("/Game3/game3img/NAPPI1.png") no-repeat center center;
+      margin-top: 110px;
+      background: url("/IMG/NAPPI1.png") no-repeat center center;
       background-size: 300px;
       text-align: center;
       transition: all 300ms
@@ -35,7 +36,7 @@ nav {
   }
   
   .nav-link {
-     color: rgb(0, 0, 0);
+     color: #2f7b98;
      font-weight: bold;
      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
      
@@ -60,7 +61,9 @@ nav {
     transform: translateX(-50%); 
     font-size: 3em; 
     font-weight: bold; 
-    color: #001aff;
+    color: #fefaee;
+    text-shadow: 0px 5px 5px #000000;
+    margin-top: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -73,7 +76,7 @@ nav {
 h1 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #0077ff;
+    color: #2f7b98;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -81,7 +84,7 @@ h1 {
 #question {
     font-size: 3em;
     font-weight: bold;
-    color: #0077ff;
+    color: #2f7b98;
     margin: 20px 0;
 }
 
@@ -90,7 +93,7 @@ h1 {
     padding: 10px;
     width: 60%;
     max-width: 400px;
-    border: 2px solid #0077ff;
+    border: 2px solid #2f7b98;
     border-radius: 8px;
     margin-bottom: 20px;
     outline: none;
@@ -98,7 +101,7 @@ h1 {
 }
 
 #checkButton {
-    background-color: #0077ff;
+    background-color: #2f7b98;
     color: white;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -111,5 +114,17 @@ h1 {
 #score {
     font-size: 1.75em;
     margin-top: 10px;
-    color: #0077ff; 
+    color: #2f7b98; 
 }
+
+#startGameButton {
+    background-color: #2f7b98;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 100%; 
+    }
