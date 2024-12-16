@@ -49,6 +49,7 @@
             <p>Peli 3 pisteet: <span id="peli3-pisteet">0</span></p>
             <h3>Yhteispisteet: <span id="yhteispisteet">0</span></h3>
         </div>
+        <button id="reset-button" class="btn btn-danger mt-4">Nollaa pisteet</button>
     </div>
 
     <script>
@@ -62,6 +63,15 @@
         document.getElementById('peli2-pisteet').innerText = peli2;
         document.getElementById('peli3-pisteet').innerText = peli3;
         document.getElementById('yhteispisteet').innerText = yhteispisteet;
+
+        const resetButton = document.getElementById('reset-button');
+        resetButton.addEventListener('click', () => {
+            localStorage.removeItem('peli1');
+            localStorage.removeItem('peli2');
+            localStorage.removeItem('peli3');
+
+            location.reload();
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
