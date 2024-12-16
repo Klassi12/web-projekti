@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreElement.textContent = `Pisteet: ${score}/${totalQuestions}`;
         questionCount++;
 
+        localStorage.setItem('peli2', score);
         
         setTimeout(() => {
             generateQuestion();
