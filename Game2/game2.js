@@ -99,11 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     startGameButton.addEventListener('click', startGame);
-    checkButton.addEventListener('click', checkAnswer);
-<<<<<<< HEAD
-    
-});
-=======
+    checkButton.addEventListener('click', checkAnswer);   
 });
 
->>>>>>> b2710203650b1b005944c5ade410104d678fc103
