@@ -22,6 +22,8 @@ function showQuestion() {
         questionElement.dataset.correct = question.isCorrect;
     } else {
         document.getElementById("game").innerHTML = `<h2>Peli ohi! Tuloksesi: ${score} / ${questions.length}</h2>`;
+
+        showResults();
     }
 }
 function checkAnswer(isTrue) {
@@ -34,6 +36,9 @@ function checkAnswer(isTrue) {
     showQuestion();
 }
 
+function showResults() {
+    localStorage.setItem('peli3', score); // Tallennetaan pisteet
+}
 
 function startGame() {
     const startButton = document.getElementById("start-button");

@@ -87,6 +87,7 @@ function checkAnswer(selectedOption) {
 
 function showResults() {
     const gameContainer = document.getElementById("game-container");
+    localStorage.setItem('peli1', score);
     gameContainer.innerHTML = `
         <h2>Peli päättyi!</h2>
         <p>Sinun pistemääräsi: ${score}/${questions.length}</p>
